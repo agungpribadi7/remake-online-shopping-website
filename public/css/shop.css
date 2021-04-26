@@ -1,0 +1,335 @@
+header nav .brand-logo {
+	left: 0;
+	-webkit-transform: initial;
+    transform: initial;
+}
+@media (min-width: 992px) {
+	main {
+		margin-left: 250px;
+    }
+	header {
+        margin-left: 250px;
+	}
+	.navbar-fixed nav {
+        width: calc(100% - 250px);
+	}
+	header nav .brand-logo {
+		left: 12px;
+	}
+}
+
+#nav-menu {
+	height: 100%;
+	width: 250px;
+    overflow-y: hidden;
+}
+#nav-menu .user-view {
+    display: block;
+    padding: 16px;
+    min-height: 140px;
+}
+#nav-menu .user-view .detail {
+    display: block;
+    line-height: 18px;
+    margin-top: 12px;
+}
+#nav-menu .user-view .detail .nama {
+    color: white;
+    font-size: 15px;
+}
+#nav-menu .user-view .detail .userID {
+    color: lightgray;
+    font-size: 13px;
+}
+#nav-menu .collapsible-body li a {
+	padding: 0 30px;
+}
+#nav-menu li>a {
+    padding: 0 16px;
+}
+#nav-menu li>a>i {
+    margin-right: 16px;
+}
+.sidenav .user-dropdown {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+}
+#user-dropdown-content {
+    min-width: 150px;
+}
+
+main .container {
+	width: 96%;
+}
+main > .container {
+    padding-top: 1%;
+}
+
+/* BAGIAN THEME
+#ec8611 | emas     | primary color
+#ec8611 | perunggu | secondary color
+#dd4814 | orange   | tertiary color
+*/
+nav, .page-footer {
+	background-color: #ec8611;
+}
+nav .btn {
+	background-color: rgba(0,0,0, 0.2);
+}
+#nav-menu .user-view .background {
+    background: #dd4814 /*url(../img/sidenav.png)*/;
+}
+a {
+	color: #ec8611;
+	border-bottom: 1px solid transparent;
+	transition: border-color .2s;
+	cursor: pointer;
+}
+a:hover, [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+	border-color: #ec8611;
+}
+li a:hover, header nav .brand-logo:hover {
+	border-color: transparent;
+}
+footer a {
+	color: white;	
+}
+footer a:hover {
+	border-color: white;
+}
+.btn {
+	background-color: #a05c0f;
+	color: white;
+}
+.btn:hover, .tabs .indicator, [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+	background-color: #ec8611;
+}
+.btn:focus {
+	background-color: #dd4814;
+}
+input:focus:not([readonly]) {
+	border-bottom-color: #a05c0f !important;
+}
+input:focus:not([readonly]) + label, .tabs .tab a, .harga {
+	color: #a05c0f !important;
+}
+.tabs .tab a.active {
+	color: #ec8611;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+	background-color: transparent;
+}
+.product-image-thumb {
+	padding: 0 !important;
+	margin: 5px;
+	cursor: pointer;
+	border: 2px solid #a05c0f;
+}
+.product-image-thumb.active {
+    border: 2px solid #ec8611;
+}
+
+.full-height-center {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.no-padding {
+	padding: 0 !important;
+}
+.no-margin {
+	margin: 0 !important;
+}
+.scroll-horizontal {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.scroll-horizontal > * {
+	float: none !important;
+	display: inline-block;
+}
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.msg {
+	padding: 12px;
+	color: white;
+	border-radius: 3px;
+	margin-bottom: 12px;
+}
+
+/* search form */
+#search-form {
+    margin-left: 160px;
+    margin-right: calc(200px + 1vw);
+    padding-top: 12px;
+    transition: all 200ms;
+}
+#search-form i {
+    position: absolute;
+    font-size: 24px;
+    top: 4px;
+    left: 8px;
+    line-height: 32px !important;
+    transition: color 200ms;
+}
+#search-form #search-box {
+    display: block;
+    padding: 8px 8px 8px 50px;
+    width: 87%;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    height: 24px;
+    transition: all 200ms;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 3px;
+}
+#search-form #search-box::placeholder {
+    color: #fff;
+    transition: color 200ms;
+}
+#search-form #search-box:focus {
+    color: #333;
+    background: #fff;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+#search-box:focus::placeholder, #search-box:focus + i {
+    color: #333;
+}
+.search-focus {
+    color: #333;
+}
+@media (max-width: 992px) {
+	#search-form {
+		margin-left: 185px;
+	}
+}
+@media (max-width: 600px) {
+    #search-form {
+        margin-left: calc(100% - 150px);
+        width: 50px;
+        padding: 0;
+    }
+    #search-form.search-focus {
+        margin-left: 0;
+        width: 100%;
+    }
+    #search-form #search-box {
+        position: absolute;
+        color: transparent;
+        background-color: transparent;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 0;
+    }
+    #search-form #search-box::placeholder {
+        color: transparent;
+    }
+    #search-form #search-box:focus {
+        top: 0;
+        padding-left: 18px;
+        width: calc(100vw - 18px);
+    }
+    #search-form i {
+        font-size: 26px;
+        top: 13px;
+        left: initial;
+        right: 18px;
+        z-index: 1;
+    }
+}
+
+.sub-highlight {
+	display: flex;
+	flex-direction: column;
+}
+.carousel a, .sub-highlight a {
+	border-bottom: none;
+	line-height: 0;
+}
+.product .card-action .left {
+	position: relative;
+	top: -6px;
+	left: -15px;
+}
+@media (max-width: 600px) {
+	.sub-highlight {
+		flex-direction: row;
+	}
+}
+
+.product {
+	cursor: pointer;
+}
+.foto {
+    background: #af2736 url(../img/no_foto.svg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.foto-profil {
+	background-size: cover;
+	background-position: center;
+	background-color: orange;
+}
+.foto-profil.besar {
+	height: 15vw;
+	width: 15vw;
+	margin: auto;
+}
+.harga {
+	font-size: 24px;
+}
+
+.input-field.numeric {
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 120px;
+}
+.input-field.numeric input {
+	width: calc(100% - 80px);
+	text-align: center;
+}
+.input-field.numeric input[type="number"]::-webkit-outer-spin-button, .input-field.numeric input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-field.numeric input[type="number"] {
+    -moz-appearance: textfield;
+}
+.btn.micro {
+    line-height: 28px;
+	font-size: 7px;
+	padding: 4px 8px;
+}
+
+#cart-navbar[data-badge="0"]:after {
+    content: none !important;
+}
+#cart-navbar[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: .7em;
+    background-color: #E53935;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
