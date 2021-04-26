@@ -1,6 +1,7 @@
 # Software Development Project (Code Igniter Framework)
 
 **Update 26/04/2021**
+
 Projek ini telah dibuat pada tahun 2018, dan dibuat ulang dengan menggunakan website gratis sebagai hostingannya, maka fitur seperti mengirim email dari server ke client 
 
 untuk registrasi ataupun untuk apapun tidak dapat digunakan sebagai gantinya. Kunjungi https://coba2sdp.000webhostapp.com/ untuk melihat sekilas tentang projek ini.
@@ -12,7 +13,7 @@ penggunaan). Fitur yang kadaluarsa seperti JNE tracking juga tidak dapat digunak
 https://coba2sdp.000webhostapp.com/public/login?wawa dan masukan kata kunci **admin** sebagai email dan passwordnya.
 
 
-
+--
 
 **Agung, Antony, Irvan, Dhietto**
 
